@@ -201,19 +201,35 @@
             </a>
           </div>
 
-          <!-- Trust Badges Bar -->
-          <div class="pt-6 flex flex-wrap items-center gap-6 md:gap-12">
-            <div class="flex items-center gap-3">
-              <div class="w-10 h-10 rounded-full bg-[#00B4D8]/10 flex items-center justify-center text-[#00B4D8]">
-                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path></svg>
+          <!-- Trust Badges Bar (Premium UI Block) -->
+          <div class="mt-8 inline-flex flex-wrap items-center gap-6 md:gap-8 bg-white p-5 md:p-6 rounded-[2rem] shadow-[0_15px_40px_rgba(0,0,0,0.06)] border border-gray-100 relative group transition-all duration-300 hover:shadow-[0_20px_50px_rgba(0,180,216,0.1)]">
+            <!-- Subtle Decorative Elements -->
+            <div class="absolute -top-2 -left-2 w-8 h-8 bg-[#00B4D8]/20 rounded-full blur-xl group-hover:bg-[#00B4D8]/30 transition-colors"></div>
+            <div class="absolute -bottom-2 -right-2 w-8 h-8 bg-[#321936]/10 rounded-full blur-xl group-hover:bg-[#321936]/20 transition-colors"></div>
+
+            <!-- Badge 1: Visa Success -->
+            <div class="flex items-center gap-4 relative z-10">
+              <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-[#00B4D8]/10 to-[#00B4D8]/5 flex items-center justify-center text-[#00B4D8] shadow-inner border border-[#00B4D8]/20 group-hover:scale-105 transition-transform">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path></svg>
               </div>
-              <div><p class="text-xl font-extrabold text-[#321936] leading-none">98%</p><p class="text-[10px] font-bold text-gray-400 uppercase tracking-widest mt-1">Visa Success</p></div>
+              <div>
+                <p class="text-3xl font-black text-[#321936] leading-none tracking-tight">98<span class="text-[#00B4D8] text-2xl">%</span></p>
+                <p class="text-[10px] font-extrabold text-gray-400 uppercase tracking-widest mt-1">Visa Success</p>
+              </div>
             </div>
-            <div class="flex items-center gap-3">
-              <div class="w-10 h-10 rounded-full bg-[#321936]/10 flex items-center justify-center text-[#321936]">
-                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+
+            <!-- Divider -->
+            <div class="hidden md:block w-px h-12 bg-gradient-to-b from-gray-100 via-gray-300 to-gray-100 mx-2"></div>
+
+            <!-- Badge 2: Experience -->
+            <div class="flex items-center gap-4 relative z-10">
+              <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-[#321936]/10 to-[#321936]/5 flex items-center justify-center text-[#321936] shadow-inner border border-[#321936]/20 group-hover:scale-105 transition-transform">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
               </div>
-              <div><p class="text-xl font-extrabold text-[#321936] leading-none">10+ Yrs</p><p class="text-[10px] font-bold text-gray-400 uppercase tracking-widest mt-1">Experience</p></div>
+              <div>
+                <p class="text-3xl font-black text-[#321936] leading-none tracking-tight">10<span class="text-[#321936] text-2xl">+</span></p>
+                <p class="text-[10px] font-extrabold text-gray-400 uppercase tracking-widest mt-1">Yrs Experience</p>
+              </div>
             </div>
           </div>
         </div>
