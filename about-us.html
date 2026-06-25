@@ -165,19 +165,82 @@
     <section class="w-full py-16 bg-white">
         <div class="container mx-auto px-4 max-w-6xl">
             <!-- Introduction Section -->
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
-        <div class="order-2 lg:order-1 relative">
-            <div class="absolute inset-0 bg-primary/10 rounded-[2.5rem] transform -translate-x-4 translate-y-4"></div>
-            <img src="https://danagedumigrate.in/wp-content/uploads/2024/05/Untitled-3.jpg" alt="About Danag Edumigrate" class="relative rounded-[2rem] shadow-xl w-full object-cover h-[500px] border-4 border-white">
-            <div class="absolute bottom-8 -right-8 bg-white p-6 rounded-2xl shadow-xl hidden md:block">
-                <div class="flex items-center space-x-4">
-                    <div class="w-12 h-12 bg-secondary rounded-full flex items-center justify-center text-white text-2xl font-bold">15+</div>
-                    <div>
-                        <p class="text-sm text-gray-500 font-medium">Years of</p>
-                        <p class="text-lg font-bold text-dark-purple">Experience</p>
-                    </div>
-                </div>
-            </div>
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-24 relative">
+          <!-- Decorative Background Blob -->
+          <div class="absolute -left-32 top-1/4 w-[500px] h-[500px] bg-secondary/5 rounded-full blur-[80px] pointer-events-none"></div>
+
+          <!-- Image Side -->
+          <div class="order-2 lg:order-1 relative z-10 group">
+              <div class="relative">
+                  <!-- Main Image -->
+                  <div class="rounded-[2.5rem] overflow-hidden shadow-2xl relative z-10 border-8 border-white group-hover:shadow-[0_20px_50px_rgba(108,52,131,0.15)] transition-shadow duration-500">
+                      <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Students studying abroad" class="w-full object-cover h-[550px] transform group-hover:scale-105 transition-transform duration-700">
+                      <div class="absolute inset-0 bg-gradient-to-t from-dark-purple/40 to-transparent mix-blend-multiply"></div>
+                  </div>
+                  
+                  <!-- Smaller Overlapping Image -->
+                  <div class="absolute -bottom-12 -left-12 w-64 h-64 rounded-full overflow-hidden shadow-2xl border-8 border-white z-20 hidden md:block transform group-hover:-translate-y-4 transition-transform duration-500">
+                      <img src="https://images.unsplash.com/photo-1543269865-cbf427effbad?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Group discussion" class="w-full h-full object-cover">
+                  </div>
+                  
+                  <!-- Experience Badge -->
+                  <div class="absolute top-12 -right-8 bg-white p-6 rounded-3xl shadow-[0_15px_40px_rgba(0,0,0,0.1)] z-30 hidden md:block animate-bounce" style="animation-duration: 3s;">
+                      <div class="flex items-center space-x-5">
+                          <div class="w-16 h-16 bg-gradient-to-br from-primary to-secondary rounded-2xl flex items-center justify-center text-white text-3xl font-extrabold shadow-inner">
+                              15<span class="text-xl">+</span>
+                          </div>
+                          <div>
+                              <p class="text-sm text-gray-500 font-bold uppercase tracking-wider mb-1">Years of</p>
+                              <p class="text-xl font-black text-dark-purple leading-none">Experience</p>
+                          </div>
+                      </div>
+                  </div>
+                  
+                  <!-- Decorative Dots -->
+                  <div class="absolute -top-10 -left-10 w-40 h-40 bg-[radial-gradient(#6c3483_2px,transparent_2px)] [background-size:16px_16px] opacity-20 z-0"></div>
+              </div>
+          </div>
+          
+          <!-- Text Side -->
+          <div class="order-1 lg:order-2 relative z-10">
+              <div class="inline-flex items-center space-x-2 bg-primary/5 border border-primary/10 px-4 py-2 rounded-full mb-6">
+                  <span class="w-2 h-2 rounded-full bg-accent animate-pulse"></span>
+                  <span class="text-primary font-bold text-xs md:text-sm tracking-widest uppercase">Who We Are</span>
+              </div>
+              
+              <h2 class="text-4xl md:text-5xl lg:text-6xl font-black text-dark-purple mb-8 leading-[1.1] tracking-tight">
+                  About <br/>
+                  <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">Danag Edumigrate</span>
+              </h2>
+              
+              <p class="text-lg md:text-xl text-gray-600 leading-relaxed mb-6 font-medium">
+                  Danag Edumigrate is the perfect companion for students who dream of studying abroad. Our commitment to excellence and comprehensive range of services makes us the top choice for students aspiring to pursue education in renowned international institutions.
+              </p>
+              
+              <div class="relative pl-8 py-4 mb-8">
+                  <div class="absolute left-0 top-0 bottom-0 w-1.5 bg-gradient-to-b from-primary to-secondary rounded-full"></div>
+                  <div class="absolute inset-0 bg-gradient-to-r from-primary/5 to-transparent rounded-r-2xl pointer-events-none -ml-2"></div>
+                  <p class="text-lg text-gray-700 leading-relaxed relative z-10">
+                      Our mission is to provide unwavering support and guidance to make the path to studying abroad as smooth as possible. Our range of services is unparalleled and covers not only education but also leadership training, language proficiency exams like PTE and IELTS, and online training programs. We provide personalized and expert guidance to ensure that your choices align with your goals and dreams. Our expertise in the visa application process simplifies what can be a complex and daunting experience, making your transition to a new country smoother.
+                  </p>
+              </div>
+              
+              <div class="flex items-center space-x-4 pt-4">
+                  <a href="contact-us.html" class="group relative inline-flex items-center justify-center px-8 py-4 text-base font-bold text-white transition-all duration-300 bg-dark-purple rounded-full hover:bg-primary hover:shadow-lg hover:-translate-y-1 focus:outline-none overflow-hidden">
+                      <span class="absolute inset-0 w-full h-full -mt-1 rounded-lg opacity-30 bg-gradient-to-b from-transparent via-transparent to-black"></span>
+                      <span class="relative">Discover More</span>
+                      <svg class="relative w-5 h-5 ml-2 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                  </a>
+                  
+                  <div class="flex items-center space-x-3 ml-4">
+                      <div class="w-12 h-12 rounded-full bg-green-50 flex items-center justify-center border border-green-100">
+                          <svg class="w-6 h-6 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                      </div>
+                      <span class="font-bold text-dark-purple">ISO Certified</span>
+                  </div>
+              </div>
+          </div>
+      </div>
         </div>
         <div class="order-1 lg:order-2">
             <div class="inline-block bg-primary/10 text-primary px-4 py-2 rounded-full font-semibold tracking-wide text-sm mb-4">WHO WE ARE</div>
