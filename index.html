@@ -26,7 +26,7 @@
       main ul { @apply list-disc list-outside ml-6 mb-6 space-y-3 text-base md:text-lg text-gray-700; }
       main ol { @apply list-decimal list-outside ml-6 mb-6 space-y-3 text-base md:text-lg text-gray-700; }
       main li { @apply pl-2; }
-      main img { @apply rounded-2xl shadow-xl my-10 max-w-full h-auto object-cover border border-gray-100; }
+      main img { @apply rounded-2xl my-10 max-w-full h-auto object-cover;  }
       main strong, main b { @apply font-bold text-dark-purple; }
       main blockquote { @apply border-l-4 border-primary pl-6 py-2 italic text-gray-600 my-8 bg-gray-50 rounded-r-lg; }
       
@@ -244,15 +244,17 @@
             <div class="absolute inset-[-15px] md:inset-[-20px] rounded-full border border-dashed border-[#FF9E10]/40 animate-[spin_40s_linear_infinite]"></div>
             <div class="absolute inset-[-30px] md:inset-[-40px] rounded-full border border-dashed border-[#231269]/20 animate-[spin_60s_linear_infinite_reverse] hidden sm:block"></div>
             
-            <!-- Inner Solid Gradient Blob -->
-            <div class="absolute inset-0 rounded-full bg-gradient-to-br from-[#FFD166] to-[#FCA311] shadow-[inset_0_-20px_60px_rgba(0,0,0,0.1),0_20px_50px_rgba(252,163,17,0.25)]"></div>
-            
-            <!-- Inner Glowing Highlight -->
-            <div class="absolute top-1/4 left-1/4 w-1/2 h-1/2 rounded-full bg-white blur-3xl opacity-60 mix-blend-overlay"></div>
+            <!-- Inner Container with Overflow Hidden (Clips the bottom curve perfectly) -->
+            <div class="absolute inset-0 rounded-full bg-gradient-to-br from-[#FFD166] to-[#FCA311] shadow-[inset_0_-20px_60px_rgba(0,0,0,0.1),0_20px_50px_rgba(252,163,17,0.25)] overflow-hidden">
+              <!-- Inner Glowing Highlight -->
+              <div class="absolute top-1/4 left-1/4 w-1/2 h-1/2 rounded-full bg-white blur-3xl opacity-60 mix-blend-overlay z-0"></div>
+              
+              <!-- Bottom half of image (Clipped to the circle) -->
+              <img src="images/Woman-1.png" alt="Happy Student Pointing" class="absolute bottom-0 left-1/2 -translate-x-1/2 w-[120%] max-w-[130%] h-[115%] object-contain object-bottom z-20">
+            </div>
 
-            <!-- The Transparent Student Image -->
-            <!-- Note: User should replace 'assets/student-pointing.png' with their uploaded image path -->
-            <img src="images/Woman-1.png" alt="Happy Student Pointing" class="absolute bottom-0 left-1/2 -translate-x-1/2 w-[120%] max-w-[130%] h-[115%] object-contain drop-shadow-[0_20px_40px_rgba(0,0,0,0.2)] z-20">
+            <!-- Top half of image (Allowed to pop out of the circle) -->
+            <img src="images/Woman-1.png" alt="Happy Student Pointing" class="absolute bottom-0 left-1/2 -translate-x-1/2 w-[120%] max-w-[130%] h-[115%] object-contain object-bottom z-30 drop-shadow-[0_10px_30px_rgba(0,0,0,0.15)]" style="clip-path: inset(-20% -20% 40% -20%);">
             
             <!-- Floating badges removed as requested -->
 
