@@ -253,30 +253,95 @@
     </div>
   </section>
 
-  <!-- 3 & 4. Unique Services -->
-  <section class="container mx-auto px-4 mb-24">
-    <div class="text-center mb-12">
-      <h5 class="text-gray-800 font-bold text-xl mb-2">Welcome to the Danag Edumigrate</h5>
-      <h2 class="text-2xl md:text-3xl font-extrabold text-primary uppercase tracking-wide">Explore OUR UNIQUE SERVICES</h2>
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <style>
+    .swiper-pagination-bullet-active { background-color: var(--color-primary, #6c3483) !important; }
+  </style>
+
+  <!-- 3 & 4. Unique Services Slider -->
+  <section class="container mx-auto px-4 mb-24 relative overflow-hidden">
+    <div class="text-center mb-16 relative z-10">
+      <div class="inline-flex items-center space-x-2 bg-primary/5 border border-primary/10 px-4 py-2 rounded-full mb-4">
+        <span class="w-2 h-2 rounded-full bg-accent animate-pulse"></span>
+        <h5 class="text-primary font-bold text-xs md:text-sm tracking-widest uppercase">Welcome to Danag Edumigrate</h5>
+      </div>
+      <h2 class="text-3xl md:text-4xl lg:text-5xl font-extrabold text-gray-900 uppercase tracking-tight">Explore OUR <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">UNIQUE SERVICES</span></h2>
     </div>
     
-    <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-      <div class="bg-white p-8 border-[8px] border-dark-purple text-center flex flex-col justify-center min-h-[200px]">
-        <h4 class="text-xl font-bold text-gray-900 mb-4 uppercase">Migration</h4>
-        <p class="text-sm text-gray-600 font-medium">Danag Edumigrate is your trusted partner<br>for seamless migration to Canada and<br>Australia.</p>
+    <div class="swiper servicesSlider px-4 py-8 max-w-7xl mx-auto -mx-4 md:mx-auto">
+      <div class="swiper-wrapper">
+        <!-- Slide 1 -->
+        <div class="swiper-slide h-auto py-4">
+          <div class="bg-white rounded-3xl p-8 border border-gray-100 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_20px_40px_rgb(108,52,131,0.12)] transition-all duration-500 h-full flex flex-col items-center text-center group cursor-grab">
+            <div class="w-20 h-20 bg-gradient-to-br from-primary/5 to-accent/5 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-primary transition-all duration-500">
+              <svg class="w-10 h-10 text-primary group-hover:text-white transition-colors duration-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+            </div>
+            <h4 class="text-xl font-extrabold text-gray-900 mb-4 uppercase tracking-wide group-hover:text-primary transition-colors">Migration</h4>
+            <p class="text-gray-600 font-medium text-base leading-relaxed">Danag Edumigrate is your trusted partner for seamless migration to Canada and Australia.</p>
+          </div>
+        </div>
+        <!-- Slide 2 -->
+        <div class="swiper-slide h-auto py-4">
+          <div class="bg-white rounded-3xl p-8 border border-gray-100 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_20px_40px_rgb(108,52,131,0.12)] transition-all duration-500 h-full flex flex-col items-center text-center group cursor-grab">
+            <div class="w-20 h-20 bg-gradient-to-br from-primary/5 to-accent/5 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-primary transition-all duration-500">
+              <svg class="w-10 h-10 text-primary group-hover:text-white transition-colors duration-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+            </div>
+            <h4 class="text-xl font-extrabold text-gray-900 mb-4 uppercase tracking-wide group-hover:text-primary transition-colors">PTE / IELTS</h4>
+            <p class="text-gray-600 font-medium text-base leading-relaxed">Danag Edumigrate is your trusted partner in achieving excellence in the PTE and IELTS exams.</p>
+          </div>
+        </div>
+        <!-- Slide 3 -->
+        <div class="swiper-slide h-auto py-4">
+          <div class="bg-white rounded-3xl p-8 border border-gray-100 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_20px_40px_rgb(108,52,131,0.12)] transition-all duration-500 h-full flex flex-col items-center text-center group cursor-grab">
+            <div class="w-20 h-20 bg-gradient-to-br from-primary/5 to-accent/5 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-primary transition-all duration-500">
+              <svg class="w-10 h-10 text-primary group-hover:text-white transition-colors duration-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+            </div>
+            <h4 class="text-xl font-extrabold text-gray-900 mb-4 uppercase tracking-wide group-hover:text-primary transition-colors">Career Counseling</h4>
+            <p class="text-gray-600 font-medium text-base leading-relaxed">Danag Edumigrate is your trusted partner for comprehensive career counseling services.</p>
+          </div>
+        </div>
+        <!-- Slide 4 -->
+        <div class="swiper-slide h-auto py-4">
+          <div class="bg-white rounded-3xl p-8 border border-gray-100 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_20px_40px_rgb(108,52,131,0.12)] transition-all duration-500 h-full flex flex-col items-center text-center group cursor-grab">
+            <div class="w-20 h-20 bg-gradient-to-br from-primary/5 to-accent/5 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-primary transition-all duration-500">
+              <svg class="w-10 h-10 text-primary group-hover:text-white transition-colors duration-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+            </div>
+            <h4 class="text-xl font-extrabold text-gray-900 mb-4 uppercase tracking-wide group-hover:text-primary transition-colors">Online Training</h4>
+            <p class="text-gray-600 font-medium text-base leading-relaxed">Danag Edumigrate brings quality education to you with online courses for IELTS, PTE, GRE, and GMAT.</p>
+          </div>
+        </div>
       </div>
-      
-      <div class="bg-white p-8 border-[8px] border-dark-purple text-center flex flex-col justify-center min-h-[200px]">
-        <h4 class="text-xl font-bold text-gray-900 mb-4 uppercase">PTE / IELTS</h4>
-        <p class="text-sm text-gray-600 font-medium">Danag Edumigrate is your trusted partner<br>in achieving excellence in the PTE and<br>IELTS exams.</p>
-      </div>
-      
-      <div class="bg-white p-8 border-[8px] border-dark-purple text-center flex flex-col justify-center min-h-[200px]">
-        <h4 class="text-xl font-bold text-gray-900 mb-4 uppercase">Career Counseling</h4>
-        <p class="text-sm text-gray-600 font-medium">Danag Edumigrate is your trusted partner<br>for comprehensive career counseling<br>services.</p>
-      </div>
+      <!-- Swiper Pagination -->
+      <div class="swiper-pagination !relative !mt-8"></div>
     </div>
   </section>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const swiper = new Swiper('.servicesSlider', {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        loop: true,
+        autoplay: {
+          delay: 3500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+          dynamicBullets: true,
+        },
+        breakpoints: {
+          640: { slidesPerView: 2, spaceBetween: 20 },
+          1024: { slidesPerView: 3, spaceBetween: 30 },
+          1280: { slidesPerView: 4, spaceBetween: 30 },
+        }
+      });
+    });
+  </script>
 
   <!-- 5. Visa Process Banner -->
   <section class="bg-dark-purple py-16 mb-24 w-full">
