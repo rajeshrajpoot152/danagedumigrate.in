@@ -15,28 +15,6 @@
         --color-light-gray: #e2dede;
         --color-dark: #141414;
       }
-
-      /* Global Responsive Typography for Raw HTML Content */
-      main h1 { @apply text-3xl md:text-4xl lg:text-5xl font-extrabold text-dark-purple mb-6 leading-tight tracking-tight; }
-      main h2 { @apply text-2xl md:text-3xl lg:text-4xl font-bold text-dark-purple mt-10 mb-5 leading-snug tracking-tight; }
-      main h3 { @apply text-xl md:text-2xl lg:text-3xl font-semibold text-primary mt-8 mb-4 leading-snug; }
-      main h4 { @apply text-lg md:text-xl font-semibold text-dark mt-6 mb-3; }
-      main p { @apply text-base md:text-lg text-gray-700 leading-relaxed mb-6; }
-      main p a, main li a { @apply text-secondary font-medium hover:text-primary underline decoration-2 underline-offset-4 transition-colors; }
-      main ul { @apply list-disc list-outside ml-6 mb-6 space-y-3 text-base md:text-lg text-gray-700; }
-      main ol { @apply list-decimal list-outside ml-6 mb-6 space-y-3 text-base md:text-lg text-gray-700; }
-      main li { @apply pl-2; }
-      main img { @apply rounded-2xl shadow-xl my-10 max-w-full h-auto object-cover border border-gray-100; }
-      main strong, main b { @apply font-bold text-dark-purple; }
-      main blockquote { @apply border-l-4 border-primary pl-6 py-2 italic text-gray-600 my-8 bg-gray-50 rounded-r-lg; }
-      
-      /* Professional Table Styling */
-      main .table-responsive { @apply w-full overflow-x-auto rounded-xl shadow-sm border border-gray-100 mb-8; }
-      main table { @apply w-full text-left border-collapse text-sm md:text-base whitespace-nowrap md:whitespace-normal; }
-      main th { @apply bg-gray-50 border-b border-gray-200 font-semibold text-dark-purple p-4 text-left; }
-      main td { @apply border-b border-gray-100 p-4 text-gray-700 align-top; }
-      main tr:last-child td { @apply border-b-0; }
-      main tr:hover td { @apply bg-gray-50/50 transition-colors; }
 </style>
 <link href="https://danagedumigrate.in/" rel="canonical"/><meta content="Danag Edumigrate is your trusted companion on the journey to realizing your dreams of studying abroad." name="description"/></head>
 <body class="bg-gray-50/50 text-gray-800 antialiased font-sans">
@@ -179,8 +157,10 @@
     </div>
 </section>
         
-        <div class="container mx-auto px-4 max-w-6xl mb-20">
-    <!-- Introduction Section -->
+        
+    <section class="w-full py-16 bg-white">
+        <div class="container mx-auto px-4 max-w-6xl">
+            <!-- Introduction Section -->
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
         <div class="order-2 lg:order-1 relative">
             <div class="absolute inset-0 bg-primary/10 rounded-[2.5rem] transform -translate-x-4 translate-y-4"></div>
@@ -208,7 +188,13 @@
     </div>
 
     
-    <!-- Counters Section -->
+    
+        </div>
+    </section>
+    
+    <section class="w-full py-12 bg-white relative z-10 -mt-10">
+        <div class="container mx-auto px-4 max-w-6xl">
+            <!-- Counters Section -->
     <div class="bg-white rounded-[3rem] shadow-md p-10 md:p-12 mb-20 border border-gray-50 transform hover:-translate-y-1 transition-transform duration-300">
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 divide-y sm:divide-y-0 lg:divide-x divide-gray-100">
             <!-- Counter 1 -->
@@ -258,8 +244,14 @@
         </div>
     </div>
 
-<!-- Why Choose Us Section -->
-    <div class="bg-gray-50 rounded-[3rem] p-10 md:p-16 mb-20 shadow-sm border border-gray-100">
+
+        </div>
+    </section>
+    
+    <section class="w-full py-24 bg-gray-50 border-t border-b border-gray-200">
+        <div class="container mx-auto px-4 max-w-6xl">
+            <!-- Why Choose Us Section -->
+    <div class="">
         <div class="text-center max-w-2xl mx-auto mb-12">
             <h3 class="text-3xl md:text-4xl font-bold text-dark-purple mb-4">Why Choose Us</h3>
             <p class="text-gray-600 text-lg">We offer comprehensive support to ensure your success in academic and professional pursuits globally.</p>
@@ -329,7 +321,13 @@
         </div>
     </div>
 
-    <!-- Mission, Vision, Values -->
+    
+        </div>
+    </section>
+    
+    <section class="w-full py-24 bg-white">
+        <div class="container mx-auto px-4 max-w-6xl">
+            <!-- Mission, Vision, Values -->
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
         <!-- Mission -->
         <div class="bg-white rounded-3xl shadow-lg overflow-hidden border border-gray-100 group hover:-translate-y-2 transition-transform duration-300">
@@ -383,7 +381,13 @@
         </div>
     </div>
 
-    <!-- Advanced Call To Action Section -->
+    
+        </div>
+    </section>
+    
+    <section class="w-full pt-12 pb-24 bg-white">
+        <div class="container mx-auto px-4 max-w-6xl">
+            <!-- Advanced Call To Action Section -->
     <div class="relative rounded-[3rem] overflow-hidden mb-20 shadow-2xl mt-12">
         <!-- Background Gradient and Patterns -->
         <div class="absolute inset-0 bg-gradient-to-br from-primary via-dark-purple to-indigo-900"></div>
@@ -413,10 +417,11 @@
             </div>
         </div>
     </div>
-</div>
-</main>
 
-        
+        </div>
+    </section>
+    </main>
+       
         
         
         
