@@ -234,28 +234,18 @@
           </div>
         </div>
 
-        <!-- Right Content (Image inside distinct shape) -->
-        <div class="relative z-10 flex justify-center lg:justify-end order-1 lg:order-2 mb-10 lg:mb-0 pt-4 lg:pt-0">
+        <!-- Right Content (Image container) -->
+        <div class="relative z-10 flex justify-center lg:justify-end order-1 lg:order-2 mb-10 lg:mb-0 pt-4 lg:pt-0 w-full lg:w-11/12">
           
-          <!-- Premium Responsive Background Shape -->
-          <div class="relative w-[280px] h-[280px] sm:w-[340px] sm:h-[340px] md:w-[450px] md:h-[450px] lg:w-[500px] lg:h-[500px]">
+          <div class="relative w-full max-w-[320px] sm:max-w-[400px] md:max-w-md lg:max-w-lg">
+            <!-- Premium Offset Background Glow/Shape -->
+            <div class="absolute inset-0 bg-gradient-to-br from-[#FF9E10] to-[#E08500] rounded-[2.5rem] transform translate-x-4 translate-y-4 md:translate-x-6 md:translate-y-6 shadow-xl animate-[pulse_4s_ease-in-out_infinite]"></div>
             
-            <!-- Dynamic Rotating Rings -->
-            <div class="absolute inset-[-15px] md:inset-[-20px] rounded-full border border-dashed border-[#FF9E10]/40 animate-[spin_40s_linear_infinite]"></div>
-            <div class="absolute inset-[-30px] md:inset-[-40px] rounded-full border border-dashed border-[#231269]/20 animate-[spin_60s_linear_infinite_reverse] hidden sm:block"></div>
-            
-            <!-- Inner Solid Gradient Blob -->
-            <div class="absolute inset-0 rounded-full bg-gradient-to-br from-[#FFD166] to-[#FCA311] shadow-[inset_0_-20px_60px_rgba(0,0,0,0.1),0_20px_50px_rgba(252,163,17,0.25)]"></div>
-            
-            <!-- Inner Glowing Highlight -->
-            <div class="absolute top-1/4 left-1/4 w-1/2 h-1/2 rounded-full bg-white blur-3xl opacity-60 mix-blend-overlay"></div>
-
-            <!-- The Transparent Student Image -->
-            <!-- Note: User should replace 'assets/student-pointing.png' with their uploaded image path -->
-            <img src="images/Woman-1.png" alt="Happy Student Pointing" class="absolute bottom-0 left-1/2 -translate-x-1/2 w-[120%] max-w-[130%] h-[115%] object-contain drop-shadow-[0_20px_40px_rgba(0,0,0,0.2)] z-20">
-            
-            <!-- Floating badges removed as requested -->
-
+            <!-- Image Card Box -->
+            <div class="relative bg-white p-2.5 sm:p-3 md:p-4 rounded-[2.5rem] shadow-[0_20px_50px_rgba(35,18,105,0.15)] border border-gray-100 overflow-hidden group">
+              <!-- The Image -->
+              <img src="images/Woman-1.png" alt="Happy Student Pointing" class="w-full h-auto object-cover rounded-[2rem] transform group-hover:scale-105 transition-transform duration-700 shadow-inner">
+            </div>
           </div>
         </div>
       </div>
