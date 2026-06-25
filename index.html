@@ -246,54 +246,83 @@
     </div>
   </section>
 
-  <!-- 2. Core Feature Cards -->
-  <section class="py-16 lg:py-20 bg-gray-50 relative" id="services">
-    <div class="container mx-auto px-4 lg:px-8 max-w-7xl relative z-10">
-      <div class="text-center mb-16">
-        <div class="inline-flex items-center space-x-2 bg-primary/10 px-4 py-1.5 rounded-full mb-4">
-          <span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
-          <span class="text-[10px] font-bold tracking-widest uppercase text-primary">Why Choose Us</span>
+  <!-- 2. Core Feature Cards (Premium Editorial Layout) -->
+  <section class="py-16 lg:py-24 bg-gray-50 relative" id="services">
+    <div class="container mx-auto px-4 max-w-7xl relative z-10">
+      
+      <!-- Section Header -->
+      <div class="text-center mb-16 lg:mb-20">
+        <div class="inline-flex items-center space-x-2 bg-[#321936]/5 px-4 py-1.5 rounded-full mb-4 border border-[#321936]/10">
+          <span class="w-2 h-2 rounded-full bg-[#00B4D8] animate-pulse"></span>
+          <span class="text-[11px] font-bold tracking-widest uppercase text-[#321936]">Why Choose Us</span>
         </div>
-        <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 mb-4 tracking-tight">Our Core <span class="text-primary">Expertise</span></h2>
-        <div class="w-20 h-1.5 bg-gradient-to-r from-primary to-[#00B4D8] mx-auto rounded-full"></div>
+        <h2 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-6 tracking-tight">Our Core <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#321936] to-[#00B4D8]">Expertise</span></h2>
+        <div class="w-24 h-1.5 bg-gradient-to-r from-[#321936] to-[#00B4D8] mx-auto rounded-full"></div>
       </div>
       
-      <div class="grid md:grid-cols-3 gap-8">
+      <div class="grid md:grid-cols-3 gap-8 lg:gap-10">
         
         <!-- Feature 1 -->
-        <div class="group bg-white p-10 rounded-[2rem] border border-gray-100 shadow-[0_10px_40px_rgb(0,0,0,0.03)] hover:shadow-[0_20px_50px_rgb(108,52,131,0.08)] hover:-translate-y-2 transition-all duration-500 flex flex-col items-center text-center relative overflow-hidden">
-          <div class="absolute inset-0 bg-gradient-to-b from-transparent to-gray-50/50 group-hover:to-primary/5 transition-colors duration-500"></div>
+        <div class="group relative bg-white p-10 lg:p-12 rounded-[2.5rem] shadow-[0_10px_30px_rgba(0,0,0,0.03)] hover:shadow-[0_20px_60px_rgba(50,25,54,0.12)] hover:-translate-y-2 transition-all duration-500 overflow-hidden text-left border border-gray-100">
+          <!-- Background Watermark -->
+          <div class="absolute -right-4 -top-8 text-[12rem] font-black text-gray-50 group-hover:text-[#321936]/5 transition-colors duration-500 select-none pointer-events-none z-0 leading-none">01</div>
           
-          <div class="w-20 h-20 bg-primary/10 rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 group-hover:bg-primary transition-all duration-500 relative z-10 shadow-sm border border-primary/20">
-            <svg class="w-10 h-10 text-primary group-hover:text-white transition-colors duration-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+          <!-- Animated Bottom Border -->
+          <div class="absolute bottom-0 left-0 h-1.5 w-0 bg-gradient-to-r from-[#321936] to-[#00B4D8] group-hover:w-full transition-all duration-700 ease-in-out z-10"></div>
+          
+          <!-- Content -->
+          <div class="relative z-10">
+            <!-- Floating Icon -->
+            <div class="w-16 h-16 bg-[#321936]/5 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-[#321936] group-hover:scale-110 group-hover:rotate-3 transition-all duration-500 shadow-sm border border-[#321936]/10">
+              <svg class="w-8 h-8 text-[#321936] group-hover:text-white transition-colors duration-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+            </div>
+            
+            <h3 class="text-2xl font-extrabold text-gray-900 mb-4 group-hover:text-[#321936] transition-colors leading-tight pr-4">Free Quality Education Consultation</h3>
+            <p class="text-gray-500 leading-relaxed text-base">Get personalized guidance from our experts to shape your academic future without any initial cost.</p>
           </div>
-          
-          <h3 class="text-xl font-bold text-gray-900 mb-4 relative z-10 group-hover:text-primary transition-colors">Free Quality Education Consultation</h3>
-          <p class="text-gray-500 leading-relaxed text-sm relative z-10">Get personalized guidance from our experts to shape your academic future without any initial cost.</p>
         </div>
 
-        <!-- Feature 2 -->
-        <div class="group bg-white p-10 rounded-[2rem] border border-gray-100 shadow-[0_10px_40px_rgb(0,0,0,0.03)] hover:shadow-[0_20px_50px_rgb(108,52,131,0.08)] hover:-translate-y-2 transition-all duration-500 flex flex-col items-center text-center relative overflow-hidden">
-          <div class="absolute inset-0 bg-gradient-to-b from-transparent to-gray-50/50 group-hover:to-[#00B4D8]/5 transition-colors duration-500"></div>
+        <!-- Feature 2 (Highlighted/Pop) -->
+        <div class="group relative bg-white p-10 lg:p-12 rounded-[2.5rem] shadow-[0_20px_50px_rgba(0,0,0,0.06)] hover:shadow-[0_30px_70px_rgba(0,180,216,0.15)] hover:-translate-y-4 transition-all duration-500 overflow-hidden text-left border border-[#00B4D8]/20 md:-mt-4 md:mb-4">
+          <!-- Background Watermark -->
+          <div class="absolute -right-4 -top-8 text-[12rem] font-black text-gray-50 group-hover:text-[#00B4D8]/5 transition-colors duration-500 select-none pointer-events-none z-0 leading-none">02</div>
           
-          <div class="w-20 h-20 bg-[#00B4D8]/10 rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 group-hover:bg-[#00B4D8] transition-all duration-500 relative z-10 shadow-sm border border-[#00B4D8]/20">
-            <svg class="w-10 h-10 text-[#00B4D8] group-hover:text-white transition-colors duration-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path></svg>
+          <!-- Animated Top/Bottom Border -->
+          <div class="absolute top-0 left-0 w-full h-1.5 bg-gradient-to-r from-[#00B4D8] to-[#321936] z-10"></div>
+          
+          <!-- Glowing Aura Behind Card -->
+          <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-32 h-32 bg-[#00B4D8]/20 blur-[60px] rounded-full group-hover:bg-[#00B4D8]/30 transition-all duration-700 z-0 pointer-events-none"></div>
+
+          <!-- Content -->
+          <div class="relative z-10">
+            <!-- Floating Icon -->
+            <div class="w-16 h-16 bg-[#00B4D8]/10 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-[#00B4D8] group-hover:scale-110 group-hover:rotate-3 transition-all duration-500 shadow-sm border border-[#00B4D8]/20">
+              <svg class="w-8 h-8 text-[#00B4D8] group-hover:text-white transition-colors duration-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path></svg>
+            </div>
+            
+            <h3 class="text-2xl font-extrabold text-gray-900 mb-4 group-hover:text-[#00B4D8] transition-colors leading-tight pr-4">Choose The Right Course</h3>
+            <p class="text-gray-600 leading-relaxed text-base">We help you select programs that perfectly align with your career goals and current academic profile.</p>
           </div>
-          
-          <h3 class="text-xl font-bold text-gray-900 mb-4 relative z-10 group-hover:text-[#00B4D8] transition-colors">Choose The Right Course</h3>
-          <p class="text-gray-500 leading-relaxed text-sm relative z-10">We help you select programs that perfectly align with your career goals and current academic profile.</p>
         </div>
 
         <!-- Feature 3 -->
-        <div class="group bg-white p-10 rounded-[2rem] border border-gray-100 shadow-[0_10px_40px_rgb(0,0,0,0.03)] hover:shadow-[0_20px_50px_rgb(108,52,131,0.08)] hover:-translate-y-2 transition-all duration-500 flex flex-col items-center text-center relative overflow-hidden">
-          <div class="absolute inset-0 bg-gradient-to-b from-transparent to-gray-50/50 group-hover:to-primary/5 transition-colors duration-500"></div>
+        <div class="group relative bg-white p-10 lg:p-12 rounded-[2.5rem] shadow-[0_10px_30px_rgba(0,0,0,0.03)] hover:shadow-[0_20px_60px_rgba(50,25,54,0.12)] hover:-translate-y-2 transition-all duration-500 overflow-hidden text-left border border-gray-100">
+          <!-- Background Watermark -->
+          <div class="absolute -right-4 -top-8 text-[12rem] font-black text-gray-50 group-hover:text-[#321936]/5 transition-colors duration-500 select-none pointer-events-none z-0 leading-none">03</div>
           
-          <div class="w-20 h-20 bg-primary/10 rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 group-hover:bg-primary transition-all duration-500 relative z-10 shadow-sm border border-primary/20">
-            <svg class="w-10 h-10 text-primary group-hover:text-white transition-colors duration-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+          <!-- Animated Bottom Border -->
+          <div class="absolute bottom-0 right-0 h-1.5 w-0 bg-gradient-to-l from-[#00B4D8] to-[#321936] group-hover:w-full transition-all duration-700 ease-in-out z-10"></div>
+          
+          <!-- Content -->
+          <div class="relative z-10">
+            <!-- Floating Icon -->
+            <div class="w-16 h-16 bg-[#321936]/5 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-[#321936] group-hover:scale-110 group-hover:-rotate-3 transition-all duration-500 shadow-sm border border-[#321936]/10">
+              <svg class="w-8 h-8 text-[#321936] group-hover:text-white transition-colors duration-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+            </div>
+            
+            <h3 class="text-2xl font-extrabold text-gray-900 mb-4 group-hover:text-[#321936] transition-colors leading-tight pr-4">Migrate to Australia or Canada with PR( Permanent Residency)</h3>
+            <p class="text-gray-500 leading-relaxed text-base">Smooth pathways to migrate with specialized Permanent Residency support via PTE.</p>
           </div>
-          
-          <h3 class="text-xl font-bold text-gray-900 mb-4 relative z-10 group-hover:text-primary transition-colors">Migrate to Australia or Canada with PR( Permanent Residency)</h3>
-          <p class="text-gray-500 leading-relaxed text-sm relative z-10">Smooth pathways to migrate to Australia & Canada with specialized Permanent Residency support via PTE.</p>
         </div>
 
       </div>
