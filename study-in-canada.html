@@ -27,7 +27,7 @@
       main ul { @apply list-disc list-outside ml-6 mb-6 space-y-3 text-base md:text-lg text-gray-700; }
       main ol { @apply list-decimal list-outside ml-6 mb-6 space-y-3 text-base md:text-lg text-gray-700; }
       main li { @apply pl-2; }
-      main img { @apply rounded-2xl my-10 max-w-full h-auto object-cover;  }
+      main img:not([class*="absolute"]) { @apply rounded-2xl my-10 max-w-full h-auto object-cover;  }
       main strong, main b { @apply font-bold text-dark-purple; }
       main blockquote { @apply border-l-4 border-primary pl-6 py-2 italic text-gray-600 my-8 bg-gray-50 rounded-r-lg; }
       
