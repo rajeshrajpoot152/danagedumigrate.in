@@ -221,27 +221,16 @@
               </div>
 
               <!-- Right Side: Image with Design -->
-              <div class="relative order-1 lg:order-2 mb-10 lg:mb-0">
+              <div class="relative order-1 lg:order-2 mb-10 lg:mb-0 h-full flex items-center justify-center">
                   <!-- Decorative elements behind the image -->
-                  <div class="absolute -top-4 -right-4 w-24 h-24 bg-accent/20 rounded-full blur-xl"></div>
-                  <div class="absolute -bottom-6 -left-6 w-32 h-32 bg-primary/20 rounded-full blur-xl"></div>
-                  <div class="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent rounded-[2rem] transform translate-x-4 translate-y-4"></div>
+                  <div class="absolute -top-4 -right-4 w-24 h-24 bg-accent/20 rounded-full blur-xl pointer-events-none"></div>
+                  <div class="absolute -bottom-6 -left-6 w-32 h-32 bg-primary/20 rounded-full blur-xl pointer-events-none"></div>
+                  <div class="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent rounded-[2rem] transform translate-x-4 translate-y-4 pointer-events-none"></div>
                   
                   <!-- Main Image Container -->
-                  <div class="relative rounded-[2rem] overflow-hidden shadow-2xl border-8 border-white group">
-                      <div class="absolute inset-0 bg-dark-purple/10 group-hover:bg-transparent transition-colors duration-500 z-10"></div>
-                      <img src="https://danagedumigrate.in/wp-content/uploads/2023/11/country_2020100707485864.jpg" alt="Consultation" class="w-full h-auto object-cover transform group-hover:scale-110 transition-transform duration-700">
-                      
-                      <!-- Floating Badge Overlay -->
-                      <div class="absolute bottom-6 left-6 z-20 bg-white/95 backdrop-blur rounded-2xl p-4 shadow-lg flex items-center gap-4 transform translate-y-2 group-hover:translate-y-0 opacity-90 group-hover:opacity-100 transition-all duration-300">
-                          <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center text-green-600">
-                              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                          </div>
-                          <div>
-                              <p class="text-dark-purple font-bold text-sm">Free Access</p>
-                              <p class="text-gray-500 text-xs">Expert Consultation</p>
-                          </div>
-                      </div>
+                  <div class="relative w-full aspect-[4/3] rounded-[2rem] overflow-hidden shadow-2xl border-8 border-white group">
+                      <div class="absolute inset-0 bg-dark-purple/10 group-hover:bg-transparent transition-colors duration-500 z-10 pointer-events-none"></div>
+                      <img src="https://danagedumigrate.in/wp-content/uploads/2023/11/country_2020100707485864.jpg" alt="Consultation" class="absolute inset-0 w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700">
                   </div>
               </div>
 
